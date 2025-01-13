@@ -1,0 +1,36 @@
+body{ 
+      background: #333; 
+}
+div{ 
+      display:flex; 
+      flex-direction:column; 
+      justify-content: center;
+      align-items:center
+}
+.cool-shadow{ 
+      color: #00b3b4; 
+      font-size: 4rem; 
+      text-transform: uppercase; 
+      font-family: Nova Mono, sans-serif; 
+      text-shadow: 3px 3px 0px #efeef1, 
+                   8px 8px 0px rgba(0,0,0,0.1);
+}
+
+.threedee { 
+      color: #00b3b4; 
+      font-size: 4rem; 
+      text-transform: uppercase; 
+      font-family:Roboto condensed,sans-serif; 
+      transform: skew(-5deg, -5deg) rotate(5deg); 
+      text-shadow: 1px 1px #0000, 
+                   2px 2px #0000,
+                   3px 3px #e7eef1,
+                   4px 4px #e7eef1,
+                   5px 5px #e7eef1,
+                   6px 6px #e7eef1,
+                   7px 7px #e7eef1,
+                   8px 8px tomato,
+                   9px 9px tomato,
+                   10px 10px tomato,
+                   11px 11px 15px rgba(0,0,0,0.5);
+}
