@@ -1,0 +1,128 @@
+body{ 
+      background: pink
+}
+.main-container { 
+      display:flex; 
+      width: 90%; 
+      margin: 50px auto; 
+}
+.head-container { 
+      position:relative; 
+      width: 100px; 
+      height: 100px; 
+      background: #241f21; 
+      border-radius: 20px; 
+      display:flex; 
+      justify-content:center; 
+      align-items:center; 
+      box-shadow: 0px 0px 0px 20px #b51a2a; 
+      margin : auto; 
+
+}
+.char{ 
+      margin-right: 30px; 
+      margin-left: 30px; 
+}
+.head { 
+      width: 30px; 
+      height: 30px; 
+      background: #241f21; 
+      box-shadow: 0px 0px 0px 10px #fefefe; 
+}
+.circle { 
+      border-radius: 50%; 
+}
+.triangle { 
+      position:relative; 
+      height: 50px; 
+      width: 60px; 
+      background: white; 
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.innertriangle { 
+      position: absolute; 
+      top: 10px; 
+      right: 10px; 
+      left: 10px; 
+      bottom: 10px; 
+      background: #241f21; 
+      clip-path: polygon(50% 30%, 20% 100%, 80% 100%); 
+}
+.body-top{ 
+      position:relative; 
+      width: 130px; 
+      height: 100px; 
+      background: #b51a2a; 
+      margin-top: 10px; 
+      border-radius: 20px 20px 0 0; 
+      border-bottom: 10px solid #241f21; 
+}
+.hand{ 
+      position:absolute; 
+      width: 30px; 
+      height: 95px; 
+      background: #c01e2e; 
+      z-index: 1; 
+}
+.lh{ 
+      margin-left: -20px; 
+      left: 0; 
+      bottom: 0; 
+      border-radius: 50px 0 0 0 ; 
+      z-index: -10; 
+}
+.rh{ 
+      margin-right: -20px; 
+      right: 0; 
+      bottom: 0; 
+      border-radius: 0 50px 0 0 ; 
+}
+.palm { 
+      position: absolute; 
+      height: 30px; 
+      width: 30px; 
+      background: #241f21; 
+      bottom: 0; 
+      margin-bottom: -15px; 
+      border-radius: 50%; 
+      z-index: -12; 
+}
+.half { 
+      height: 30px; 
+      width: 30px; 
+      background: #c01e2e; 
+      margin-top: -15px; 
+}
+.line { 
+      width: 5px; 
+      height: 100px; 
+      background: #241f21; 
+      margin: auto; 
+}
+.leg{ 
+      position:relative; 
+      width: 60px; 
+      height: 100px; 
+      background: #b51a2a; 
+}
+.body-btm { 
+      display:flex; 
+      justify-content: space-between; 
+      width: 130px; 
+      margin: auto; 
+}
+.toe { 
+      position:absolute; 
+      width: 60px; 
+      height: 30px; 
+      bottom: 0; 
+      background: #241f21; 
+      margin-bottom: -25px; 
+      border-radius: 0 0 50% 50%; 
+}
+.two{ 
+      margin-top: 40px; 
+}
+h1{ 
+      text-align:center; 
+}
