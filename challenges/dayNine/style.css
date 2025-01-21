@@ -1,0 +1,21 @@
+.box { 
+      width: 150px; 
+      height: 150px; 
+      background: blue; 
+      margin: 130px auto; 
+      border:2px solid #000; 
+      box-shadow: 1px solid yellow; 
+      animation: box .1s ease-in-out infinite; 
+}
+
+@keyframes box { 
+      0% { 
+            transform:rotate(35deg); 
+      }
+      75% { 
+            transform: rotate(75deg); 
+      }
+      100% { 
+            transform: rotate(365deg); 
+      }
+}
