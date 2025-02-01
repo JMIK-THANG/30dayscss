@@ -1,0 +1,28 @@
+body{ 
+      background: rgb(1,10,1); 
+      padding-top: 50px; 
+}
+.box{ 
+      width: 300px; 
+      height: 300px; 
+      color: #fff; 
+      display:flex; 
+      justify-content: center;
+      align-items:center; 
+      border:3px solid cyan; 
+      box-shadow:0px 0px 15px cyan,
+                  0px 0px 15px cyan inset; 
+                  margin: 0 auto; 
+}
+span{ 
+      display:inline-block; 
+      animation: rotateY 3s linear infinite; 
+}
+@keyframes rotateY { 
+      0%{ 
+            transform: rotateY(0deg); 
+      }
+      100% { 
+            transform: rotateY(365deg); 
+      }
+}
