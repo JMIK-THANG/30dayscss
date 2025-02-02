@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #134b70;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan, 0 0 80px cyan;
+  font-size: 45px;
+}
+.emoji {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  background: linear-gradient(#ffed65, #eead2f);
+  box-shadow: 0 0 10px 2px #eead2f;
+  border-radius: 50%;
+}
+.emoji-face,
+.emoji-brow,
+.emoji-eye,
+.emoji-mouth {
+  position: absolute;
+}
+.emoji-face {
+  width: 120px;
+  height: 120px;
+  animation: face 3s linear infinite;
+}
+@keyframes face { 
+      15%, 25% { 
+            transform: rotate(20deg) translateX(-20px); 
+      }
+      45%, 65% { 
+            transform: rotate(-20deg) translateX(20px); 
+      }
+      75%, 100% { 
+            transform: rotate(0) translateX(0); 
+      }
+}
+.emoji-brow {
+  left: calc(50% - 3px);
+  animation: eye-brow 3s linear infinite;
+}
+.emoji-brow:before,
+.emoji-brow:after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 20px;
+  border: 6px solid #aa7408;
+  top: -3px;
+  left: calc(50% - 15px);
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+.emoji-brow:before {
+  margin-left: 25px;
+}
+.emoji-brow:after {
+  margin-left: -25px;
+}
+@keyframes eye-brow {
+  15%,
+  65% {
+    top: 25px;
+  }
+  75%,
+  100% {
+    top: 15px;
+  }
+}
+.emoji-eye {
+  width: 16px;
+  height: 24px;
+  box-shadow: 25px 0 0 0 #1b2031, -25px 0 0 0 #1b2031;
+  left: calc(50% - 8px);
+  top: 35px;
+  border-radius: 50%;
+}
+.emoji-mouth {
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  background: linear-gradient(#54290f, #622b0b, #6e3011);
+  left: calc(50% - 16px);
+  top: 50%;
+  border-radius: 50%;
+  animation: mouth 3s linear infinite;
+}
+@keyframes mouth {
+  10%,
+  30% {
+    width: 20px;
+    height: 20px;
+    left: calc(50% - 10px);
+  }
+  75%,
+  100% {
+    width: 20px;
+    height: 45px;
+  }
+}
