@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+  --green: #31f500;
+  --animation-curve: cubic-bezier(0.12, 0.7, 0.74, 0.71);
+}
+.phone {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #fff;
+  color: #fff;
+  animation: phone 1s var(--animation-curve) infinite alternate-reverse;
+}
+
+div {
+  position: absolute;
+  background: var(--green);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: scaling 2s var(--animation-curve) infinite;
+}
+
+@keyframes scaling { 
+      0% { 
+            transform: scale(4); 
+            background: var(--green); 
+      }
+      100% { 
+            transform: scale(10); 
+            background: rgba(245, 0 , 182, 0); 
+      }
+}
+@keyframes phone { 
+      0%{ 
+            transform: scale(4); 
+      }
+      100% { 
+            transform: scale(4.5); 
+      }
+}
+.cirlce1{ 
+      animation-delay: 0s; 
+}
+.circle2 { 
+      animation-delay: 1s; 
+}
